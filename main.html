@@ -5,15 +5,15 @@
 </head>
 <body>
 
-  <!-- Initial Status -->
-  <p id="status">Enter the Metaverse</p>
+  <div id="status">
+    <p>Enter the Metaverse</p>
+  </div>
 
-  <!-- Button to trigger status change -->
   <button id="enterBtn">Enter</button>
 
   <script>
     document.getElementById("enterBtn").addEventListener("click", function() {
-      document.getElementById("status").outerHTML = "<h1 id='status'>Entered Metaverse</h1>";
+      document.getElementById("status").innerHTML = "<h1>Entered Metaverse</h1>";
     });
   </script>
 
